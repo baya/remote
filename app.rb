@@ -26,7 +26,7 @@ load_rbfiles('config')
 
 module Remote
 
-  App = Ground '场景' do
+  App = Ground 'Remote' do
     use Rack::ShowExceptions
     use Rack::Static, :urls => ['/assets']
     use Rack::Session::Cookie, {
